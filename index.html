@@ -6,47 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+      integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>My Task List</title>
+    <title>My Number Guesser Game</title>
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col s12">
-          <div id="main" class="card">
-            <div class="card-content">
-              <span class="card-title">Task List</span>
-              <div class="row">
-                <form id="task-form">
-                  <div class="input-field col s12">
-                    <input type="text" name="task" id="task">
-                    <label for="task">New Task</label>
-                  </div>
-                  <input type="submit" value="Add Task" class="btn">
-                </form>
-              </div>
-            </div>
-            <div class="card-action">
-              <h5 id="task-title">Tasks</h5>
-              <div class="input-field col s12">
-                <input type="text" name="filter" id="filter">
-                <label for="filter">Filter Tasks</label>
-              </div>
-              <ul class="collection"></ul>
-              <a href="#" class="clear-tasks btn black">Clear Tasks</a>
-            </div>
-          </div>
-        </div>
+      <h1>Number Guesser</h1>
+      <div id="game">
+        <p>
+          Guess a Number Between <span class="min-num">1</span> and
+          <span class="max-num">10</span>
+        </p>
+        <input type="number" id="guess-input" placeholder="Enter The Number....">
+        <input type="submit" value="submit" id="guess-btn">
+        <p class="message"></p>
       </div>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.6.1.js"
-      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <script src="app.js"></script>
   </body>
 </html>
